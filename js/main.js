@@ -1,7 +1,4 @@
 
-(function () {
-    emailjs.init("bxkIXzjgRNWONHzS8"); // تأكد من وضع معرف المستخدم الصحيح هنا
-  })();
 
     // كود JavaScript
 
