@@ -51,4 +51,20 @@ document.getElementById("some-nav").addEventListener("click", function (event) {
     });
 });
 
+document.getElementById("some-nav").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("some").scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+document.getElementById("Contact_nav").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("contact-forms").scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+
+
 // تهيئة EmailJS
