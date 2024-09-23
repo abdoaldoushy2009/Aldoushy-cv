@@ -21,14 +21,26 @@ function Open_colose_Menu() {
 }
 
 // فتح الروابط في علامات تبويب جديدة
-document.getElementById("openFacebookProfile").addEventListener("click", function () {
-    window.open("https://www.facebook.com/aldoushy.mahdy", "_blank");
+document.getElementById("openFacebookProfile").addEventListener("click", function() {
+    window.open("https://www.facebook.com/aldoushy.mahdy", "_blank"); // Open link in a new tab
 });
 
-document.getElementById("openinstagramProfile").addEventListener("click", function () {
-    window.open("https://www.instagram.com/aldoushy/", "_blank");
+
+document.getElementById("openinstagramProfile").addEventListener("click", function() {
+    window.open("https://www.instagram.com/aldoushy/", "_blank"); // Open link in a new tab
 });
 
+document.getElementById("openlinkedinProfile").addEventListener("click", function() {
+    window.open("https://eg.linkedin.com/in/aldoushy-mahdy-7ba094229?trk=public_post_comment_actor-name", "_blank"); // Open link in a new tab
+});
+
+document.getElementById("openlinkedinProfile").addEventListener("click", function() {
+    window.open("https://www.instagram.com/aldoushy/", "_blank"); // Open link in a new tab
+});
+
+document.getElementById("openschoolProfile").addEventListener("click", function() {
+    window.open("https://scholar.google.com/citations?user=ooTc54cAAAAJ&hl=en", "_blank"); // Open link in a new tab
+});
 // التمرير السلس إلى العناصر
 document.getElementById("education-nav").addEventListener("click", function (event) {
     event.preventDefault();
