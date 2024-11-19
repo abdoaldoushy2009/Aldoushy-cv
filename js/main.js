@@ -1,5 +1,24 @@
 
+ // Function to check the viewport size
+    function checkViewport() {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
 
+      const content = document.querySelector('.content');
+      const message = document.querySelector('.message');
+
+      if (width <= 1001 && height <= 745) {
+        content.classList.add('hidden'); // Hide content
+        message.style.display = 'block'; // Show message
+      } else {
+        content.classList.remove('hidden'); // Show content
+        message.style.display = 'none'; // Hide message
+      }
+    }
+
+    // Check viewport size on load and resize
+    window.addEventListener('load', checkViewport);
+    window.addEventListener('resize', checkViewport);
 
 // كود JavaScript
 
