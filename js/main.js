@@ -1,20 +1,34 @@
 
- // Function to check the viewport size
-    function checkViewport() {
-      const width = window.innerWidth;
-      const height = window.innerHeight;
+ // Function to toggle visibility based on screen size
+function toggleVisibility() {
+  const messageDiv = document.querySelector(".message");
+  const otherContent = document.querySelectorAll("body > *:not(.message)");
 
-      const content = document.querySelector('.content');
-      const message = document.querySelector('.message');
-
-      if (width <= 1001 && height <= 745) {
-        content.classList.add('hidden'); // Hide content
-        message.style.display = 'block'; // Show message
-      } else {
-        content.classList.remove('hidden'); // Show content
-        message.style.display = 'none'; // Hide message
+  if (window.innerWidth <= 1001 && window.innerHeight <= 745) {
+    // Show the message and hide other content
+    messageDiv.style.display = "block";
+    otherContent.forEach((element) => {
+      if (element !== messageDiv) {
+        element.style.display = "none";
       }
-    }
+    });
+  } else {
+    // Hide the message and show other content
+    messageDiv.style.display = "none";
+    otherContent.forEach((element) => {
+      if (element !== messageDiv) {
+        element.style.display = "block";
+      }
+    });
+  }
+}
+
+// Run the function on page load and window resize
+window.addEventListener("load", toggleVisibility);
+window.addEventListener("resize", toggleVisibility);
+
+
+
 
     // Check viewport size on load and resize
     window.addEventListener('load', checkViewport);
