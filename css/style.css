@@ -23,7 +23,7 @@ body{
 }
 
 center {
-    padding: 5%;
+    margin: 5%;
 }
 .message {
     display: none; /* Hide the message div initially */
