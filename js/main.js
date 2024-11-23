@@ -1,7 +1,7 @@
 
  // Function to toggle visibility based on screen size
 function toggleVisibility() {
-  const messageDiv = document.querySelector(".message");
+  const messageDiv = document.querySelector(".message .header");
   const otherContent = document.querySelectorAll("body > *:not(.message)");
 
   if (window.innerWidth <= 1001 && window.innerHeight <= 745) {
