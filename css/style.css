@@ -22,6 +22,9 @@ body{
     background: #131313;
 }
 
+center {
+    padding: 5%;
+}
 .message {
     display: none; /* Hide the message div initially */
     padding: 0;
