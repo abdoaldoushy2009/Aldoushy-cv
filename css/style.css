@@ -23,7 +23,10 @@ body{
 }
 
 center {
-    margin: 10%;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
 
 .message {
