@@ -22,22 +22,19 @@ body{
     background: #131313;
 }
 
-center {
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
-}
 
 .message {
     display: none; /* Hide the message div initially */
-    padding: 0;
+    padding: 70px 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
     font-family: "Inter",sans-serif;
     color: #00b7ff;
+    border: 3px solid blue;
+    text-align: center;
+    
 }
 .lanscape {
     width: 30%;
