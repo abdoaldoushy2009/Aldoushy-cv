@@ -32,6 +32,9 @@ body{
     font-family: "Inter",sans-serif;
     color: #00b7ff;
 }
+.landscap{
+    width: 30%;
+}
     .hidden {
       display: none;
     }
